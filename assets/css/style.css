@@ -1,0 +1,373 @@
+/* Import Roboto font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* * Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Root / Light mode */
+
+:root {
+  --clr-light: #F8F8FF;
+  --clr-dark: #16161D;
+  --clr-accent: #FA9C1E;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --ff-title: "Roboto", serif;
+  --ff-body: "Assistant", sans-serif;
+}
+
+/* Dark mode */
+
+.darkmode {
+  --clr-light: #F8F8FF;
+  --clr-dark: #16161D;
+  --clr-accent: #FA9C1E;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+
+/* Bodying taking light or dark theme */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--ff-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* titles */
+
+h1 {
+  font-size: calc(2rem + 6vw);
+  font-family: var(--ff-title);
+  /* margin: 0 0 0.25em; */
+  line-height: 1;
+  color: var(--clr-accent);
+}
+
+h2 {
+  font-size: calc(1rem + 2vw);
+  color: var(--clr-accent);
+}
+
+h3 {
+  font-size: calc(0.5rem + 1.5vw);
+  color: var(--clr-accent);
+}
+
+.subtitle {
+  max-width: 600px;
+  color: var(--clr-secondary);
+}
+
+.accent {
+  color: var(--clr-accent);
+  max-width: 600px;
+}
+
+/* Button */
+
+.btn-group {
+  margin: 2em 0;
+  display: relative;
+}
+
+.btn {
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.btn:hover{
+  background: var(--clr-accent);
+  color: var(--foreground);
+}
+
+.btn + .btn {
+  margin-left: 1em;
+}
+
+.btn-secondary {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.btn-accent {
+  background: var(--clr-accent);
+  color: var(--foreground);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: var(--foreground) 2px solid;
+  left: -4px;
+  top: 4px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.content {
+  height: 100vh;
+  padding: 10em 0;
+  display: grid;
+  grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
+  align-content: flex-start;
+  transform: translateX(0) translateY(-12.5%);
+}
+
+.content > * {
+  grid-column: 2 / 3;
+}
+
+/* Photo Grid */
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 0 0 100px;
+  margin: 5px;
+  text-align: center; /* Add this line to center the text */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--clr-accent);
+}
+
+.column p {
+  margin: 5px 0; /* Add some margin to separate the image and text */
+}
+
+/* Maps Images */
+
+.maps .column {
+  margin: 50px;
+}
+
+.maps .column p {
+  width: 175%; 
+}
+
+.maps .column img {
+  width: 175%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid var(--clr-accent);
+  padding: 16px;
+  text-align: center;
+}
+
+td img {
+  max-width: 75px;
+  height: auto;
+}
+
+/* Counter Display */
+
+.container {
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  transform: translateX(60%);
+}
+
+.top-middle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  position: absolute;
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  border: solid var(--clr-accent);
+}
+
+.arrow-top-left {
+  top: -20px;
+  left: 80px;
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
+}
+
+.arrow-top-right {
+  top: 100px;
+  right: -20px;
+  border-width: 0 0 2px 2px;
+  transform: rotate(45deg);
+}
+
+.arrow-bottom-right {
+  bottom: -20px;
+  right: 100px;
+  border-width: 2px 2px 0 0;
+  transform: rotate(-45deg);
+}
+
+.container img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+}
+
+.top-middle,
+.bottom-left,
+.bottom-right {
+    text-align: center;
+}
+
+.top-middle img,
+.bottom-left img,
+.bottom-right img {
+    display: block;
+    margin: 0 auto;
+}
+
+.top-middle p,
+.bottom-left p,
+.bottom-right p {
+    margin: 0;
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: var(--background);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: var(--background);
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* Toggle button */
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 1;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+}

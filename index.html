@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tanks">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jack Gardner">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanks</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/profiles-modals.js" defer></script>
+    <script src="assets/js/comps-modals.js" defer></script>
+    <script src="assets/js/maps-modals.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.png">
+    <script src="https://kit.fontawesome.com/39ebcef0ea.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <!-- Content -->
+    <section class="content">      
+        <h1>Tanks</h1>
+
+        <div class="btn-group"> 
+            <a href="#" id="home" class="btn btn-secondary target">Home</a>
+            <a href="#" id="profiles" class="btn btn-secondary target">Profiles</a>
+            <a href="#" id="counters" class="btn btn-secondary target">Counters</a>
+            <a href="#" id="comps" class="btn btn-secondary target">Comps</a>
+            <a href="#" id="maps" class="btn btn-secondary target">Maps</a>
+        </div>
+
+        <!-- Home Section -->
+        <div class="home" hidden>
+            <h2>Home</h2>
+            <p class="subtitle">Learn how to play Tank in OW2</p>  
+            <p class="accent">By Nbow</p>
+        </div>
+
+        <!-- Profiles Section -->
+        <div class="profiles" hidden>
+            <h2>Profiles</h2>
+
+            <div class="row">
+                <div class="column">
+                  <img src="assets/imgs/doomfist.png" alt="Doomfist">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/dva.png" alt="D.Va">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/junker-queen.png" alt="Junker Queen">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/orisa.png" alt="Orisa">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/ramattra.png" alt="Ramattra">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/reinhardt.png" alt="Reinhardt">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="assets/imgs/roadhog.png" alt="Roadhog">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/sigma.png" alt="Sigma">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/winston.png" alt="Winston">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">
+                </div>
+                <div class="column">
+                  <img src="assets/imgs/zarya.png" alt="Zarya">
+                </div>
+            </div>
+              
+        </div>
+
+        <!-- Counters Section -->
+        <div class="counters" hidden>
+            <h2>Counters</h2>
+
+            <table>
+                <tr>
+                  <td><img src="assets/imgs/doomfist.png" alt="Doomfist">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="D.Va">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/junker-queen.png" alt="Junker Queen">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/orisa.png" alt="Orisa">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/zarya.png" alt="Zarya">&nbsp;&nbsp;&nbsp;</td>
+                  <td><img src="assets/imgs/dva.png" alt="D.va">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/zarya.png" alt="Zarya">&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><img src="assets/imgs/junker-queen.png" alt="Junker Queen">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/orisa.png" alt="Orisa">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/reinhardt.png" alt="Reinhardt">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/sigma.png" alt="Sigma">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/zarya.png" alt="Zarya">&nbsp;&nbsp;&nbsp;</td>
+                  <td><img src="assets/imgs/orisa.png" alt="Orisa">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="dva">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/sigma.png" alt="Sigma">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/winston.png" alt="Winston">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/zarya.png" alt="Zarya">&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><img src="assets/imgs/ramattra.png" alt="Ramattra">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp;</td>
+                  <td><img src="assets/imgs/reinhardt.png" alt="Reinhardt">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="dva">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/orisa.png" alt="Orisa">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/ramattra.png" alt="Ramattra">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/winston.png" alt="Winston">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="dva">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/orisa.png" alt="Orisa">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/ramattra.png" alt="Ramattra">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/sigma.png" alt="Sigma">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/zarya.png" alt="Zarya">&nbsp;&nbsp;&nbsp;</td>
+                  <td><img src="assets/imgs/sigma.png" alt="Sigma">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/ramattra.png" alt="Ramattra">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/reinhardt.png" alt="Reinhardt">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/winston.png" alt="Winston">&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><img src="assets/imgs/winston.png" alt="Winston">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="dva">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/doomfist.png" alt="Doomfist">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/junker-queen.png" alt="Junker Queen">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;</td>
+                    <td><img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/dva.png" alt="dva">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/junker-queen.png" alt="Junker Queen">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/roadhog.png" alt="Roadhog">&nbsp;&nbsp;&nbsp;</td>
+                  </tr>
+                <tr>
+                  <td colspan="2"><img src="assets/imgs/zarya.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/less_than.png" alt="Countered By">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/reinhardt.png" alt="Reinhardt">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/sigma.png" alt="Sigma">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/winston.png" alt="Winston">&nbsp;&nbsp;&nbsp;<img src="assets/imgs/wrecking-ball.png" alt="Wrecking Ball">&nbsp;&nbsp;&nbsp; </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- Comps Section -->
+        <div class="comps" hidden>
+            <h2>Comps</h2>
+
+            <div class="container">
+
+                <div class="top-middle">
+                    <img id="poke-icon" src="assets/imgs/sigma.png" alt="Poke">
+                    <p>Poke</p>
+                </div>
+                <div class="bottom-left">
+                    <img id="dive-icon" src="assets/imgs/winston.png" alt="Dive">
+                    <p>Dive</p>
+                </div>
+                <div class="bottom-right">
+                    <img id="rush-icon" src="assets/imgs/reinhardt.png" alt="Rush">
+                    <p>Rush</p>
+                </div>
+
+                <div class="arrow-container">
+                  <div class="arrow arrow-top-left"></div>
+                  <div class="arrow arrow-top-right"></div>
+                  <div class="arrow arrow-bottom-right"></div>
+                </div>
+
+            </div> 
+
+            <!-- Poke Modal -->
+            <div id="poke-modal" class="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Poke Modal</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                </div>
+            </div>
+  
+            <!-- Dive Modal -->
+            <div id="dive-modal" class="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Dive</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Dive</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Rush Modal -->
+            <div id="rush-modal" class="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Rush</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Rush</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Maps Section -->
+        <div class="maps" hidden>
+            <h2>Maps</h2>
+            
+            <h3>Control</h3>
+
+            <div class="row">
+              <div class="column">
+                <img src="assets/imgs/busan.png" alt="Busan">
+                <p>Busan</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/nepal.png" alt="Nepal">
+                <p>Nepal</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/ilios.png" alt="Ilios">
+                <p>Ilios</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/oasis.png" alt="Oasis">
+                <p>Oasis</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/lijiang_tower.png" alt="Lijiang Tower">
+                <p>Lijiang Tower</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/antarctic_peninsula.png" alt="Antarctic Peninsula">
+                <p>Antarctic Peninsula</p>
+              </div>
+            </div>
+            
+            <h3>Hybrid</h3>
+            
+            <div class="row">
+              <div class="column">
+                <img src="assets/imgs/blizzard_world.png" alt="Blizzard World">
+                <p>Blizzard World</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/numbani.png" alt="Numbani">
+                <p>Numbani</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/hollywood.png" alt="Hollywood">
+                <p>Hollywood</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/eichenwalde.png" alt="Eichenwalde">
+                <p>Eichenwalde</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/kings_row.png" alt="King's Row">
+                <p>King's Row</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/midtown.png" alt="Midtown">
+                <p>Midtown</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/paraiso.png" alt="Paraiso">
+                <p>Paraiso</p>
+              </div>
+            </div>
+            
+            <h3>Escort</h3>
+            
+            <div class="row">
+              <div class="column">
+                <img src="assets/imgs/circuit_royal.png" alt="Circuit Royal">
+                <p>Circuit Royal</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/dorado.png" alt="Dorado">
+                <p>Dorado</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/route_66.png" alt="Route 66">
+                <p>Route 66</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/junkertown.png" alt="Junkertown">
+                <p>Junkertown</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/rialto.png" alt="Rialto">
+                <p>Rialto</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/havana.png" alt="Havana">
+                <p>Havana</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/watchpoint_gibraltar.png" alt="Watchpoint: Gibraltar">
+                <p>Watchpoint: Gibraltar</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/shambali_monastery.png" alt="Shambali Monastery">
+                <p>Shambali Monastery</p>
+              </div>
+            </div>
+            
+            <h3>Push</h3>
+            
+            <div class="row">
+              <div class="column">
+                <img src="assets/imgs/colosseo.png" alt="Colosseo">
+                <p>Colosseo</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/esperanca.png" alt="Esperanca">
+                <p>Esperanca</p>
+              </div>
+              <div class="column">
+                <img src="assets/imgs/new_queen_street.png" alt="New Queen Street">
+                <p>New Queen Street</p>
+              </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Toggle Theme -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <i onclick="changeIcon()" id="dark-mode-icon" class="fa-regular fa-sun fa-2xl" style="color: #FA9C1E;"></i>
+    </button>
+        
+</body>
+</html>
