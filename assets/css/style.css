@@ -66,6 +66,11 @@ h3 {
   color: var(--clr-accent);
 }
 
+h4 {
+  font-size: calc(0.25rem + 1vw);
+  color: var(--clr-accent);
+}
+
 .subtitle {
   max-width: 600px;
   color: var(--clr-secondary);
@@ -186,17 +191,71 @@ img {
 table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
+  margin-bottom: 16px;
 }
 
 td {
   border: 1px solid var(--clr-accent);
   padding: 8px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
+  width: 50%; /* Each column takes 50% of the table width */
 }
 
 td img {
   max-width: 75px;
   height: auto;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+}
+
+#greenBox  {
+  border: 2px solid green;
+}
+
+#yellowBox  {
+  border: 2px solid yellow;
+}
+
+#redBox  {
+  border: 2px solid red;
+}
+
+/* Boxes */
+
+.boxGreen {
+  width: 25px;
+  height: 25px;
+  border: 2px solid green;
+  margin-right: 10px;
+}
+
+.boxYellow {
+  width: 25px;
+  height: 25px;
+  border: 2px solid yellow;
+  margin-right: 10px;
+}
+
+.boxRed {
+  width: 25px;
+  height: 25px;
+  border: 2px solid red;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+/* Counter Container */
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.counter-container h4 {
+  margin-right: 10px;
 }
 
 /* Counter Display */
